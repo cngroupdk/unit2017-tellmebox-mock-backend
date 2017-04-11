@@ -1,0 +1,15 @@
+{
+  "apps" : [
+    {
+      "name"      : "01_make-it-after",
+      "cwd"       : "./",
+      "script"    : "index.js",
+      "watch"     : false,
+      "instances" : 1,
+      "exec_mode"  : "fork",
+      "env": {
+        "PORT": "9001"
+      }
+    } 
+  ]
+}

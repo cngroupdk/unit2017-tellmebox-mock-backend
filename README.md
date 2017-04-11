@@ -37,7 +37,7 @@ Request payload:
 ```
 {
   "name": "Fresh Category"
-  }
+}
 ```
 
 #### DELETE
@@ -91,7 +91,7 @@ Response payload:
 Request payload:
 ```
 {
-	"box": {
+  "box": {
       "guid": "ABCD-1234",
       "name": "unIT 2016",
       "url": "unit-2016",
@@ -105,7 +105,7 @@ Request payload:
 Request payload:
 ```
 {
-	"box": {
+  "box": {
       "guid": "HIJK",
       "name": "New coffee machine 222",
       "url": "new-coffee-machine-222",
@@ -120,9 +120,9 @@ Request payload:
 Request payload:
 ```
 {
-	"box": {
-		"guid": "ABCD"
-	}
+  "box": {
+    "guid": "ABCD"
+  }
 }
 ```
 
@@ -166,7 +166,7 @@ Response payload:
 Request payload:
 ```
 {
-	"item": {
+  "item": {
       "guid": "ABCD",
       "text": "Great lattee 222",
       "starred": false,
@@ -184,7 +184,7 @@ Request payload:
 Request payload:
 ```
 {
-	"item": {
+  "item": {
       "guid": "GBNK",
       "text": "Great coffee 222",
       "starred": false,
@@ -202,7 +202,7 @@ Request payload:
 Request payload:
 ```
 {
-	"item": {
+  "item": {
       "guid": "QWER"
     }
 }
