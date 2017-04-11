@@ -50,7 +50,7 @@ describe('CategoryStore', () => {
           expect(categories).to.include({name: 'New Category'})
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })
@@ -69,7 +69,7 @@ describe('CategoryStore', () => {
           expect(categories).not.to.include({name: 'Management'})
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })

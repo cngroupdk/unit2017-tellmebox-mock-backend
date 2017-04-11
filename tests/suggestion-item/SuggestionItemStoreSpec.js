@@ -50,7 +50,7 @@ describe('SuggestionItemStore', () => {
           expect(items[2].text).to.be.equal('Cool')
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })
@@ -68,7 +68,7 @@ describe('SuggestionItemStore', () => {
           expect(items).to.have.lengthOf(1)
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })
@@ -87,7 +87,7 @@ describe('SuggestionItemStore', () => {
           expect(items[1].text).to.be.eql('new text')
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })

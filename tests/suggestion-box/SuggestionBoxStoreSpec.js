@@ -50,7 +50,7 @@ describe('SuggestionBoxStore', () => {
           expect(boxes).to.include({name: 'Suggestion Box 1', url: 'aaa-bbb-ccc'})
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })
@@ -68,7 +68,7 @@ describe('SuggestionBoxStore', () => {
           expect(boxes).to.have.lengthOf(2)
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })
@@ -87,7 +87,7 @@ describe('SuggestionBoxStore', () => {
           expect(boxes[2].url).to.be.eql('aaa-bbb-ccc')
           done()
         })
-        .catch((err) => {
+        .catch(() => {
           console.error('Should never reach catch()')
         })
     })

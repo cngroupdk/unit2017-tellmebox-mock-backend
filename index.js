@@ -20,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
-const categoryInitPromise = categoryStore.init()
-const suggestionBoxInitPromise = suggestionBoxStore.init()
-const suggestionItemInitPromise = suggestionItemStore.init()
+categoryStore.init()
+suggestionBoxStore.init()
+suggestionItemStore.init()
 
 const categoryEndpoint = categoryEndpointModule(categoryStore)
 const suggestionBoxEndpoint = suggestionBoxEndpointModule(suggestionBoxStore)
@@ -31,7 +31,5 @@ categoryEndpoint.register(app)
 suggestionBoxEndpoint.register(app)
 suggestionItemEndpoint.register(app)
 
-const server = app.listen(appPort, () => {
-  console.log('Web-app listening at port ' + appPort)
-})
+app.listen(appPort, () => {})
 
